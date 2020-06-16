@@ -13,11 +13,15 @@ llvm-dis main.0.0.preopt.bc
 
 C++:
 ```
-size_t N=1024;
-int a = 0;
-for (size_t i=0; i<N; i++)
+int main (int argc, char *argv[])
 {
-    a += rand()%2;
+    size_t N=1024;
+    int a = 0;
+    for (size_t i=0; i<N; i++)
+    {
+        a += rand()%2;
+    }
+    std::cerr << "a: " << a << std::endl;
 }
 ```
 
