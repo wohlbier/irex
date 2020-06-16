@@ -5,6 +5,7 @@ SET(CMAKE_CXX_STANDARD 17)
 SET(CMAKE_C_STANDARD 11)
 
 FIND_PACKAGE (LLVM 9 REQUIRED CONFIG)
+INCLUDE (cmake/traceatlas.cmake)
 
 SET (SRCS main.cc)
 
@@ -17,4 +18,6 @@ FUNCTION (GENERATE_IR tgt)
     LINK_FLAGS "-fuse-ld=lld -Wl,--plugin-opt=save-temps")
 ENDFUNCTION ()
 
-GENERATE_IR (main)
+#GENERATE_IR (main)
+
+INJECTTRACER (main)
