@@ -1,4 +1,15 @@
-Look at IR of a simple program to see basic blocks.
+Set path to TA in `./arch/clang.sh`.
+```
+mkdir build
+cd build
+../arch/clang.sh
+make
+./main-trace
+/path/to/TraceAtlas/build/bin/cartographer -b opt.bc -i raw.trc
+```
+
+Look at IR of a simple program to see basic blocks by using
+`GENERATE_IR` function in `CMakeLists.txt`.
 
 e.g.,
 ```
