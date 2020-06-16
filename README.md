@@ -13,11 +13,9 @@ Look at IR of a simple program to see basic blocks by using
 
 e.g.,
 ```
-module load cmake-3.17.1-gcc-10.1.0-7x5lm6f
-module load llvm-9.0.1-gcc-10.1.0-je4noub
 mkdir build
 cd build
-cmake ../
+../arch/clang.sh
 make
 llvm-dis main.0.0.preopt.bc
 ```
