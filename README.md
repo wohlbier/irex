@@ -32,7 +32,7 @@ define dso_local i32 @main(i32, i8**) #0 {
   %3 = alloca i32, align 4
   %4 = alloca i32, align 4
   %5 = alloca i8**, align 8
-  %6 = alloca i64, align 8
+  %6 = alloca i64, align 8          // allocate N
   %7 = alloca i32, align 4          // allocate a
   %8 = alloca i64, align 8          // allocate i
   store i32 0, i32* %3, align 4
