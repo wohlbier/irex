@@ -1,4 +1,4 @@
-# Identify kernel with https://github.com/ruhrie/TraceAtlas
+## Identify kernel with https://github.com/ruhrie/TraceAtlas
 - Build TraceAtlas
 - Set path to TA in `./arch/clang.sh`.
 - Then,
@@ -11,7 +11,7 @@ make
 /path/to/TraceAtlas/build/bin/cartographer -b opt.bc -i raw.trc
 ```
 
-# Look at IR of a simple program to see basic blocks by using `GENERATE_IR` function in `CMakeLists.txt`.
+## Look at IR of a simple program to see basic blocks by using `GENERATE_IR` function in `CMakeLists.txt`.
 
 - In `CMakeLists.txt` uncomment `GENERATE_IR` and comment out `INJECTTRACER`
 - Then,
