@@ -10,4 +10,6 @@ int main (int argc, char *argv[])
         a += rand()%2;
     }
     std::cerr << "a: " << a << std::endl;
+
+    return 0;
 }
